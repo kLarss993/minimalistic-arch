@@ -1,0 +1,41 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 25,
+    "width": 1410,
+    "spacing": 2.5,
+    "margin-bottom": 7,
+    "margin-top": 7,
+
+    // Left side
+    "modules-left": [
+        "custom/arch",
+        "hyprland/workspaces"
+    ],
+
+    // Center
+   // "modules-center": [
+   //     "hyprland/window"
+   // }],
+
+    // Right side
+    "modules-right": [
+        // "idle_inhibitor",
+
+        "pulseaudio",
+        "bluetooth",
+        "network",
+
+        "custom/sysmon",
+
+        "battery",
+        "clock",
+
+        "custom/power"
+    ],
+
+    // Load module definitions
+    "include": [
+        "~/.config/waybar/modules.json"
+    ]
+}

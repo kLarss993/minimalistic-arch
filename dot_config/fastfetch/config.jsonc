@@ -1,0 +1,59 @@
+{
+  "$schema": "https://github.com",
+  "logo": {
+    "source": "/home/klarss/arch.ascii",
+    "type": "auto", // Use "ansi" if your art has colors, or "auto"
+    "color": {
+      "1": "cyan"
+    },
+
+     "padding": {
+        "top": 1,
+        "right": 2
+    }
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "╭────────────────────────────────────────╮"
+    },
+    {
+      "type": "title",
+      "key": "│  User",
+      "format": "{1}@{2}"
+    },
+    {
+      "type": "custom",
+      "format": "├────────────────────────────────────────┤"
+    },
+    {
+      "type": "os",
+      "key": "│    OS  "
+    },
+    {
+      "type": "kernel",
+      "key": "│    Ker "
+    },
+    {
+      "type": "uptime",
+      "key": "│    Upt "
+    },
+    {
+      "type": "packages",
+      "key": "│    Pkg "
+    },
+    {
+      "type": "shell",
+      "key": "│  Sh  "
+    },
+    {
+      "type": "memory",
+      "key": "│    Mem "
+    },
+    {
+      "type": "custom",
+      "format": "╰────────────────────────────────────────╯"
+    }
+  ]
+}
+
