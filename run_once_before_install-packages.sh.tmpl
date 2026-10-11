@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if ! command -v pacman >/dev/null 2>&1; then
+    echo "Error: this installer requires Arch Linux."
+    exit 1
+fi
+
+packages=(
+    hyprland
+    waybar
+    fish
+    kitty
+    fastfetch
+    hyprpaper
+    hyprlauncher
+    brightnessctl
+    cliphist
+    grim
+    slurp
+    wl-clipboard
+    xdg-desktop-portal-hyprland
+    xdg-utils
+    dolphin
+    dunst
+    rofi
+    pipewire
+    pipewire-pulse
+    wireplumber
+    pavucontrol
+    polkit-kde-agent
+    otf-font-awesome
+    git
+    chezmoi
+)
+
+echo "Installing rice dependencies..."
+sudo pacman -Syu --needed "${packages[@]}"
+
+echo "Package installation completed."
